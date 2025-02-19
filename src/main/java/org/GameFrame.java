@@ -59,7 +59,7 @@ public class GameFrame extends JFrame {
     private void checkArea() {
         for (int i = 0; i < x_y_size; i++) {
             if (checkRow(i) || checkLine(i) || checkSlantLeft() || checkSlantRight()) {
-                JOptionPane.showMessageDialog(this, "WON!");
+                JOptionPane.showMessageDialog(this, "WIN!");
                 resetBoard();
                 break;
             }
